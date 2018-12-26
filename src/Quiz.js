@@ -4,7 +4,7 @@ import QuizEnd from './QuizEnd';
 let quizData = require('./quiz_data.json');
 class Quiz extends Component{
   handleResetClick(resetClickHandler){
-            this.props.resetClickHandler();
+        this.setState({quiz_position:1})
   }
   showNextQuestion(){
     this.setState((state)=>{
